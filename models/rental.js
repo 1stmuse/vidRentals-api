@@ -1,4 +1,3 @@
-const { boolean } = require('joi')
 const Joi = require('joi')
 const mongoose= require('mongoose')
 const Schema = mongoose.Schema
@@ -14,7 +13,7 @@ const rental = new Schema({
                 maxlength:50
             },
             isGold:{
-                type:boolean,
+                type:Boolean,
                 default:false
             },
             phone:{
@@ -60,14 +59,14 @@ const rental = new Schema({
 
 function validateRental(rental) {
     const schema =Joi.object({
-        customerId:Joi.string().required(),
-        movieId:Joi.string().required()
+        customerId:Joi.objectId().required(),
+        movieId:Joi.objectId().required()
     })
 
     return schema.validate(rental)
 }
 
-const Rental = mongoose.model('genres', rental)
+const Rental = mongoose.model('rentals', rental)
 
 exports.Rental = Rental
 exports.validate = validateRental
