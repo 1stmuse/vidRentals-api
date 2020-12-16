@@ -3,7 +3,9 @@ Joi.objectId = require('joi-objectid')(Joi)
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const config = require('config')
 
+const auth = require('./routes/auth')
 const customers = require('./routes/customers.js')
 const genres = require('./routes/genres.js')
 const movies = require('./routes/movie')
@@ -12,6 +14,11 @@ const users = require('./routes/users')
 const app = express()
 
 require('dotenv').config()
+
+if(!config.get('jwtPrivateKey')){
+    console.error('jwtkey not defined')
+    process.exit(1)
+}
 
 
 // app.use(cors())
@@ -32,6 +39,7 @@ app.use('/api/customers', customers)
 app.use('/api/movies', movies)
 app.use('/api/rentals', rentals)
 app.use('/api/users', users)
+app.use('/api/auth', auth)
 
 // app.use((req,res, next)=>{
 //     const error = new Error("Not Found")

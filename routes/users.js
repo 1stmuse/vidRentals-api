@@ -1,5 +1,6 @@
 const {User, validate} = require('../models/users')
-const mongoose = require('mongoose')
+const  bcrypt = require('bcrypt')
+const _ = require('lodash')
 const router = require('express').Router()
 
 
@@ -10,15 +11,14 @@ router.post('/', async (req, res)=>{
    let user = await User.findOne({email:req.body.email})
    if(user) return res.status(400).send('User already registered')
 
-   user = new User({
-       name:req.body.name,
-       email:req.body.email,
-       password:req.body.password
-   })
+   user = new User(_.pick(req.body,['name','email','password']))
 
-   await user.save()
+   user.password = await bcrypt.hash(req.body.password, 10)
+    await user.save()
 
-   res.send(user)
+    const token = user.generateAuthToken()
+   res.header('x-auth-token', token).send(_.pick(user,['_id','name','email']))
+
  
 })
 
