@@ -1,7 +1,7 @@
 const {User} = require('../models/users')
 const Joi = require('joi')
 const bcrypt = require('bcrypt')
-const router = require('express').Router()
+const router = require('express').Router() 
 
 router.post('/', async (req, res)=>{
     const {error} = validate(req.body)

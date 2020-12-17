@@ -1,3 +1,5 @@
+require('express-async-errors')
+const winston = require('winston')
 const Joi = require('joi')
 Joi.objectId = require('joi-objectid')(Joi)
 const express = require('express')
@@ -6,12 +8,15 @@ const cors = require('cors')
 const config = require('config')
 
 const auth = require('./routes/auth')
+const error = require('./middlewares/error')
 const customers = require('./routes/customers.js')
 const genres = require('./routes/genres.js')
 const movies = require('./routes/movie')
 const rentals = require('./routes/rentals')
 const users = require('./routes/users')
 const app = express()
+
+winston.add(winston.transports.File, {filename:'logfile.log'})
 
 require('dotenv').config()
 
@@ -47,15 +52,8 @@ app.use('/api/auth', auth)
 //     next(error)
 
 // })
-// app.use((error,req,res,next)=>{
-//     res.status(error.status || 500)
-//     res.json({
-//         error:{
-//             error:true,
-//             message: error.message
-//         }
-//     })
-// })
+
+app.use(error)
 
 const port = process.env.PORT || 8080
 

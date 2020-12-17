@@ -1,9 +1,11 @@
 const router = require('express').Router()
+const admin = require('../middlewares/admin')
 const auth = require('../middlewares/auth')
 
 const {Genre, validate} = require('../models/genres')
 
 router.get('/', async (req,res)=>{
+    throw new Error('testing logger could not get genre')
     const genres = await Genre.find().sort('name')
     res.send(genres)
 })
@@ -32,8 +34,8 @@ router.put('/:id', async (req,res)=>{
 
 })
 
-router.delete('/:id', async (req,res)=>{
-    const genre = Genre.findByIdAndRemove(req.params.id)
+router.delete('/:id', [auth, admin], async (req,res)=>{
+    const genre = await Genre.findByIdAndRemove(req.params.id)
 
     if(!genre) return res.status(404).send('The genre with the given ID does not exist')
     
