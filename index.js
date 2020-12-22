@@ -2,7 +2,7 @@ const express = require('express')
 const winston = require('winston')
 const app = express()
 
-require('./startup/loggin')
+require('./startup/loggin')()
 require('./startup/route')(app)
 require('./startup/db')()
 require('./startup/config')()
@@ -11,6 +11,8 @@ require('./startup/validation')()
 
 const port = process.env.PORT || 8080
 
-app.listen(port, ()=>{
+const server = app.listen(port, ()=>{
     winston.info('server running')
 })
+
+module.exports = server

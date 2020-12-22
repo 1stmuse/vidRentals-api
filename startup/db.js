@@ -1,13 +1,15 @@
 const winston = require('winston')
 const mongoose = require('mongoose')
+const config = require('config')
 
 module.exports = function(){
-    mongoose.connect('mongodb://localhost/movie-rentals', {
+    const db = config.get('db')
+    mongoose.connect(db, {
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useFindAndModify:false
-})
-    .then(()=> winston.info('Connected to mongoDB'))
+    })
+    .then(()=> winston.info(`Connected to ${db} ...`))
     
     mongoose.Promise = global.Promise
 }

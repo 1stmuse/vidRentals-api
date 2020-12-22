@@ -1,2 +1,134 @@
 {"message":"testing logger could not get genre","stack":"Error: testing logger could not get genre\n    at /home/muse/Desktop/my works/node-prac/routes/genres.js:8:11\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/route.js:112:3)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:174:3)\n    at router (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:47:12)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:317:13)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:275:10)\n    at jsonParser (/home/muse/Desktop/my works/node-prac/node_modules/body-parser/lib/types/json.js:110:7)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:317:13)","level":"error","timestamp":"2020-12-17T01:26:38.946Z"}
 {"level":"info","message":"Connected to mongoDB","timestamp":"2020-12-18T13:54:32.888Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T10:39:10.050Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movie-rentals ...","timestamp":"2020-12-22T10:39:10.142Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T10:40:48.585Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T10:40:48.614Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:15:20.156Z"}
+{"message":"testing logger could not get genre","stack":"Error: testing logger could not get genre\n    at /home/muse/Desktop/my works/node-prac/routes/genres.js:8:11\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/route.js:112:3)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:174:3)\n    at router (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:47:12)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:317:13)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:275:10)\n    at jsonParser (/home/muse/Desktop/my works/node-prac/node_modules/body-parser/lib/types/json.js:110:7)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:317:13)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:275:10)\n    at expressInit (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/middleware/init.js:40:5)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:317:13)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:275:10)\n    at query (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/middleware/query.js:45:5)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express-async-errors/index.js:17:17\n    at Layer.handle [as handle_request] (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:317:13)\n    at /home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/router/index.js:174:3)\n    at Function.handle (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/application.js:174:10)\n    at Server.app (/home/muse/Desktop/my works/node-prac/node_modules/express/lib/express.js:39:9)\n    at Server.emit (events.js:314:20)\n    at parserOnIncoming (_http_server.js:779:12)\n    at HTTPParser.parserOnHeadersComplete (_http_common.js:122:17)","level":"error","timestamp":"2020-12-22T12:15:20.173Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:15:20.283Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:18:36.217Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:18:36.251Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:24:16.238Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:24:16.267Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:24:35.096Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:24:35.219Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:24:48.994Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:24:49.024Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:26:00.604Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:26:00.629Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:27:10.896Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:27:10.923Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:29:43.161Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:29:45.341Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:30:42.791Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:30:42.832Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:33:52.875Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:33:53.008Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:43:07.364Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:43:07.414Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:45:09.932Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:45:09.954Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:50:36.982Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:50:37.006Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:51:27.691Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:51:27.715Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:52:01.202Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:52:01.241Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:53:03.199Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:53:03.224Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:54:59.925Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:54:59.956Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:56:59.782Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T12:56:59.809Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T12:59:19.437Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movie-rentals ...","timestamp":"2020-12-22T12:59:19.465Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:02:57.582Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:02:57.675Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:04:14.401Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:04:14.423Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:04:43.280Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:04:43.302Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:06:02.012Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:06:02.034Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:06:43.817Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:06:43.839Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:08:16.056Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:08:16.080Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:09:11.916Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:09:11.954Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:10:23.548Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:10:23.574Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:12:25.350Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:12:25.383Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T13:13:10.009Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T13:13:10.031Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T16:14:29.316Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T16:14:30.201Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T17:59:54.977Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T17:59:55.380Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:02:26.068Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:02:26.105Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:03:08.073Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:03:08.101Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:03:38.782Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:03:38.808Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:04:38.520Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:04:38.545Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:07:02.452Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:07:02.482Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:07:14.681Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:07:14.724Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:08:20.645Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:08:20.671Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:09:01.780Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:09:01.807Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:10:56.017Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:10:56.382Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:12:06.017Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:12:06.043Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:12:28.279Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:12:28.301Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:14:19.535Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:14:19.564Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:15:13.867Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:15:13.893Z"}
+{"message":"Cast to ObjectId failed for value \"5fda7a63d44dc729f3607be\" at path \"_id\" for model \"genres\"","stack":"CastError: Cast to ObjectId failed for value \"5fda7a63d44dc729f3607be\" at path \"_id\" for model \"genres\"\n    at model.Query.exec (/home/muse/Desktop/my works/node-prac/node_modules/mongoose/lib/query.js:4358:21)\n    at model.Query.Object.<anonymous>.Query.then (/home/muse/Desktop/my works/node-prac/node_modules/mongoose/lib/query.js:4450:15)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","stringValue":"\"5fda7a63d44dc729f3607be\"","kind":"ObjectId","value":"5fda7a63d44dc729f3607be","path":"_id","reason":{},"level":"error","timestamp":"2020-12-22T18:15:13.977Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:15:34.454Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:15:34.504Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:18:11.576Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:18:11.602Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T18:18:18.704Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T18:18:18.726Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:27:45.943Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:27:46.085Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:36:39.874Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:36:39.895Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:37:12.310Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:37:12.333Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:37:46.279Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:37:46.306Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:38:20.498Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:38:20.520Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:42:09.050Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:42:09.078Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:43:03.044Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:43:03.068Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:44:17.969Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:44:17.997Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:45:31.799Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:45:31.828Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:45:56.565Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:45:56.587Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:46:23.635Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:46:23.662Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:48:11.370Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:48:11.402Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:48:19.534Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:48:19.564Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:52:44.217Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:52:44.238Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:53:04.550Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:53:04.571Z"}
+{"level":"info","message":"server running","timestamp":"2020-12-22T20:54:03.322Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests ...","timestamp":"2020-12-22T20:54:03.343Z"}
