@@ -35,6 +35,15 @@ describe('/api/genres', () => {
             expect(res.status).toBe(404)
         })
 
+        it('should return 404 if no genre with the given id is provided', async ()=>{
+            // const genre = new Genre({name:'genre!'})
+            // await genre.save()
+            const id = mongoose.Types.ObjectId()
+
+            const res = await request(server).get(`/api/genres/${id}`)
+            expect(res.status).toBe(404)
+        })
+
         it('should return a genre object with given id', async () => {
 
             // await Genre.collection.insertMany([
@@ -53,41 +62,62 @@ describe('/api/genres', () => {
     })
 
     describe('POST /', ()=>{
-        it('should return 401 if client is not logged it', async ()=>{
-            const genre = {
-                name:"genre5"
-            }
+        // initialise commonly used variable
+        let token
+        let name 
 
-            const res = await request(server)
+        const apiCall = async ()=>{
+            return await request(server)
                 .post('/api/genres')
-                .send(genre)
+                .set('x-auth-token', token)
+                .send({name})
+        }
+
+        beforeEach(()=>{
+            token = new User().generateAuthToken()
+        })
+        afterEach(()=>server.close())
+
+        it('should return 401 if client is not logged it', async ()=>{
+           token = ''
+
+            res = await apiCall()
             expect(res.status).toBe(401)
         })
 
         it('should return 400 if genre is less than 5 characters', async ()=>{
-            const token = new User().generateAuthToken()
-            const genre = {
-                name:"gen"
-            }
 
-            const res = await request(server)
-                .post('/api/genres')
-                .set('x-auth-token', token)
-                .send(genre)
+            name = 'jon'
+
+            const res = await apiCall()
             expect(res.status).toBe(400)
         })
 
         it('should return 400 if genre is more than 50 characters', async ()=>{
-            const token = new User().generateAuthToken()
-            const genre = {
-                name:"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
-            }
+            name = new Array(52).join('a')
 
-            const res = await request(server)
-                .post('/api/genres')
-                .set('x-auth-token', token)
-                .send(genre)
+            const res = await apiCall()
             expect(res.status).toBe(400)
+        })
+
+        it('should should save the genre if it is valid', async ()=>{
+
+            name = 'genre1'
+            await apiCall()
+
+            const genre = await User.find({name:'genre1'})
+            expect(genre).not.toBeNull()
+        })
+
+        it('should return the genre if it is valid', async()=>{
+            // no need for token because it has been set in beforeEach test
+             name = 'genre1'
+ 
+
+            const res = await apiCall()
+
+            expect(res.body).toHaveProperty('_id')
+            expect(res.body).toHaveProperty('name', 'genre1')
         })
     })
 })
